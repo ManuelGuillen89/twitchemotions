@@ -1,4 +1,4 @@
-A library writed in Dart for fetch emotes form FFZ, BTTV and Twitch.
+A library writed in Dart to fetch emotes form FFZ, BTTV and Twitch.
 
 🚨 PLEASE DON'T USE FOR SERIOUS PROJECTS YET 🚨
 
