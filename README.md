@@ -10,7 +10,7 @@ A simple usage example:
 import 'package:twitchemoticons/twitchemoticons.dart';
 
 main() async {
-  final fetcher = await EmoteFetcher.getPreloadedFetcherAsSingleton();
+  final fetcher = await EmoteFetcher.getInitializedSingleton();
   await fetcher.fetch3rdPartyEmotesFromChannel('summit1g');
   final emote = fetcher.fetchedEmotesMappedByWord['Pog'] ?? EmptyEmote();
   emote.word() != '' ? print(emote.link()) : () {};

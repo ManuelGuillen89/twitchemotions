@@ -7,11 +7,10 @@ class EmoteFetcher {
   final Map<String, Emote> fetchedEmotesMappedByWord = {};
 
   EmoteFetcher._();
-  static EmoteFetcher createEmptyFetcherAsObject() => EmoteFetcher._();
-
   static EmoteFetcher _emoteFetcherSingleton = EmoteFetcher._();
+  static EmoteFetcher emptyObject() => EmoteFetcher._();
 
-  static Future<EmoteFetcher> getPreloadedFetcherAsSingleton() async {
+  static Future<EmoteFetcher> getInitializedSingleton() async {
     if (_emoteFetcherSingleton.fetchedEmotesMappedByWord.isNotEmpty) {
       return _emoteFetcherSingleton;
     }
